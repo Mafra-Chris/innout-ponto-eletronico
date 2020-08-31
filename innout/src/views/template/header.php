@@ -11,7 +11,7 @@
     <title>In 'n Out</title>
 </head>
 
-<body class="hide-sidebar">
+<body class="">
     <header class="header">
         <div class="logo">
             <i class="icofont-travelling mr-2 "></i>
@@ -27,14 +27,14 @@
         </div>
         <div class="dropdown">
             <div class="dropdown-button">
-                <span>Usuário Mock</span>
-                <div class="icofont-simple-down ml-2"></div>
+                <span class="ml-2">Usuário Mock</span>
+                <div class="icofont-simple-down mx-2"></div>
             </div>
             <div class="dropdown-content">
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="logout.php">
-                            <i class="iconfont-logout mr-2"></i>
+                            <i class="icofont-logout mr-2"></i>
                             Sair
                         </a>
                     </li>
