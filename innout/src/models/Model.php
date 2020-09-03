@@ -11,17 +11,14 @@ class Model {
 
     public function loadFromArray($arr, $sanitize = true) {
         if($arr) {
-            // $conn = Database::getConnection();
             foreach($arr as $key => $value) {
                 $cleanValue = $value;
                 if($sanitize && isset($cleanValue)) {
                     $cleanValue = strip_tags(trim($cleanValue));
                     $cleanValue = htmlentities($cleanValue, ENT_NOQUOTES);
-                    // $cleanValue = mysqli_real_escape_string($conn, $cleanValue);
                 }
                 $this->$key = $cleanValue;
             }
-            // $conn->close();
         }
     }
 
@@ -117,7 +114,6 @@ class Model {
         } 
         return $sql;
     }
-
 
     private static function getFormatedValue($value) {
         if(is_null($value)) {
