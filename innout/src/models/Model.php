@@ -118,6 +118,7 @@ class Model {
         return $sql;
     }
 
+
     private static function getFormatedValue($value) {
         if(is_null($value)) {
             return "null";

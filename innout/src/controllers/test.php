@@ -1,4 +1,4 @@
 <?php
 //controller temporario
 
-print_r(getLastDayOfMonth('2020-02'));
+echo User::getCount(['raw'=>'id>=2']);
